@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+ 
+	<LinearLayout 
+	  android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+	android:layout_marginTop="25dp">
+		<TextView
+			android:text="Вибір пісні"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:id="@+id/header"/>
+		</LinearLayout>
+	<LinearLayout 
+	  android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+				android:layout_marginLeft="20dp">
+		<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/RG">
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="Cranberries"
+			android:id="@+id/radioButton1" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Hardkiss"
+			android:id="@+id/radioButton2" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Hozier"
+			android:id="@+id/radioButton3" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Jamala"
+			android:id="@+id/radioButton4" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Muse"
+			android:id="@+id/radioButton5" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sinatra"
+			android:id="@+id/radioButton6" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sting"
+			android:id="@+id/radioButton7" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Song from resources"
+			android:id="@+id/radioButton8" />
+	</RadioGroup>
+		</LinearLayout>
+	 <LinearLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+		android:layout_marginTop="25dp">
+    <Button
+    android:text="Play"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playButton"/>
+    <Button
+    android:text="Pause"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/pauseButton"/>
+    <Button
+    android:text="Stop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/stopButton"/>
+  </LinearLayout>
+</LinearLayout>

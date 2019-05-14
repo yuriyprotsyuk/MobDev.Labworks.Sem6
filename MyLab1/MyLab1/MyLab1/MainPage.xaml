@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyLab1"
+             x:Class="MyLab1.MainPage">
+
+    <StackLayout Padding="40"> 
+        <Label x:Name="header" Text="Вибір поїзда" FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="StartAndExpand" />
+
+        <Label x:Name="From" Text="Від"/>
+        <Entry x:Name="FromRead" Text=""/>
+
+        <Label x:Name="To" Text="До"/>
+        <Entry x:Name="ToRead" Text=""/>
+        <Label x:Name="Time" Text="Час відправлення" FontSize="Large" />
+        <Picker x:Name="Mypicker" SelectedIndexChanged="Mypicker_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>05:00</x:String>
+                <x:String>10:00</x:String>
+                <x:String>12:00</x:String>
+                <x:String>20:30</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button x:Name="OK" Text = "OK" FontSize="Large" BorderWidth="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OnButtonClicked" />
+    </StackLayout>
+
+</ContentPage>
